@@ -1,0 +1,44 @@
+/* Default styles for the webpage */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Root Variables */
+:root {
+	--pry-font: 'Montserrat', sans-serif;
+	--sec-font: 'Clash Display, sans-serif';
+}
+
+/* WEB HTML */
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+
+	/* DEFAULT MODE COLORS */
+	--pry-bg-color: rgb(21, 14, 40);
+	--pry-text-color: rgb(212, 52, 254);
+	--sec-text-color: rgb(255, 38, 185);
+	--btn-color: rgb(144, 58, 255);
+	--white: rgb(255, 255, 255);
+	--white-fade: rgba(255, 255, 255, 0.25);
+	--box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	--border-stroke-one: 1px solid rgb(255, 255, 255);
+	--border-stroke-two: linear-gradient(rgb(154, 57, 255), rgb(255, 41, 185));
+	--section-border-line: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* LIGHT MODE COLORS */
+html[data-theme='dark'] {
+	--pry-bg-color: rgba(234, 241, 215);
+	-pry-text-color: rgb(43, 203, 1);
+	--sec-text-color: rgb(0, 217, 70);
+	--btn-color: rgb(111, 197, 0);
+	--dark: rgb(0, 0, 0);
+	--dark-fade: rgba(0, 0, 0, 0.25);
+	--box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
+	--border-stroke-one: 1px solid rgb(0, 0, 0);
+	--border-stroke-two: linear-gradient(rgb(101, 198, 0), rgb(0, 214, 70));
+	--section-border-line: 1px solid rgba(0, 0, 0, 0.18);
+}
