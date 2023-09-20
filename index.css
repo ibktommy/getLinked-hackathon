@@ -1,5 +1,5 @@
 /* Default styles for the webpage */
-* {
+*, *::after, *::before {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -40,17 +40,122 @@ html[data-theme='dark'] {
 	--box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
 	--border-stroke-one: 1px solid rgb(0, 0, 0);
 	--border-stroke-two: linear-gradient(rgb(101, 198, 0), rgb(0, 214, 70));
-	--section-border-line: 1px solid rgba(0, 0, 0, 0.18);
+	--section-border-line: 1px solid rgba(0, 0, 0, 1);
 }
 
 body {
   width: 100vw;
   min-height: 100vh;
-  /* background-color: #000; */
+  font-family: var(--pry-font);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.display {
+  display: hidden;
 }
 
 /* NAVBAR */
-.svg-logo {
-  width: 5rem;
+nav {
+  background: url('./images/backgrounds/no-star-bg.png') no-repeat;
+  background-size: cover;
+  border-bottom: var(--section-border-line);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.nav-center {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3rem 1rem;
+}
+
+#logo {
+  width: 15rem;
   height: 5rem;
+}
+
+#logo svg {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-center-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-center-menu ul {
+  display: flex;
+  align-items: center;
+  margin-right: 5rem;
+}
+
+.nav-center-menu ul li a {
+  font-size: 1.6rem;
+  letter-spacing: .1rem;
+  color: var(--white);
+  padding: 1rem 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+.nav-center-menu ul li a:hover {
+  color: var(--pry-text-color);
+  transition: color .4s;
+}
+
+.nav-center-menu ul li a::before {
+  position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: var(--white);
+	z-index: -1;
+	transform: scale(0);
+	transition: transform 0.4s;
+}
+.nav-center-menu ul li a:hover::before {
+  transform: scale(1);
+}
+
+.nav-center-menu ul li:not(:last-of-type) {
+  margin-right: 1rem;
+}
+
+#main-button {
+  width: 15rem;
+  height: 5rem;
+  border: .1rem solid var(--sec-text-color);
+  background: linear-gradient(to  left, #903aff, #D434FE,#FE34B9);
+  color: var(--white);
+  font-size: 1.6rem;
+  text-transform: capitalize;
+  font-family: var(--pry-font);
+  font-weight: 400;
+  letter-spacing: .1rem;
+  cursor: pointer;
+}
+#main-button:hover {
+  border: .1rem solid var(--white);
+  background: none;
+  transition: all .4s;
+}
+
+.nav-center-menu_mobile {
+  display: none;
 }

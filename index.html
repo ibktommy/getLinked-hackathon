@@ -23,6 +23,7 @@
 		/>
 		<!-- CSS Link -->
 		<link rel="stylesheet" href="./index.css" />
+		<link rel="stylesheet" href="./media.css" />
 		<!-- Font-awesome-icon Link -->
 		<link
 			rel="stylesheet"
@@ -33,16 +34,47 @@
 		<!-- NAVBAR -->
 		<nav>
 			<div class="nav-center">
-				<div class="logo">
-					<a href="">
-            <svg>
-						<use xlink:href="./images/SVG's/sprite.svg#getlinked-logo" class="svg-logo"></use>
+				<a href="/" id="logo">
+					<svg>
+						<use xlink:href="./images/SVG's/sprite.svg#getlinked-logo"></use>
 					</svg>
-          </a>
+				</a>
+
+				<!-- Desktop-Nav-Menu -->
+				<div class="nav-center-menu">
+					<ul>
+						<li><a href="#timeline">Timeline</a></li>
+						<li><a href="#overview">Overview</a></li>
+						<li><a href="#faq">FAQs</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+
+					<button id="main-button">register</button>
 				</div>
 
-        <h1>logo</h1>
+				<!-- Mobile-Nav-Menu -->
+				<div class="nav-center-menu_mobile">
+					<div class="nav-center-menu-bar">
+						<div class="line line-1"></div>
+						<div class="line line-2"></div>
+						<div class="line line-3"></div>
+					</div>
+					
+          <div class="mobile-navlinks">
+            <ul>
+						<li><a href="#timeline">Timeline</a></li>
+						<li><a href="#overview">Overview</a></li>
+						<li><a href="#faq">FAQs</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+
+					<button id="main-button">register</button>
+          </div>
+				</div>
 			</div>
 		</nav>
+
+    <!-- JS -->
+    <script src="./app.js"></script>
 	</body>
 </html>
