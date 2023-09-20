@@ -42,3 +42,15 @@ html[data-theme='dark'] {
 	--border-stroke-two: linear-gradient(rgb(101, 198, 0), rgb(0, 214, 70));
 	--section-border-line: 1px solid rgba(0, 0, 0, 0.18);
 }
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  /* background-color: #000; */
+}
+
+/* NAVBAR */
+.svg-logo {
+  width: 5rem;
+  height: 5rem;
+}
