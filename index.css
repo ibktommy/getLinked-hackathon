@@ -108,6 +108,27 @@ ul {
 	width: 80%;
 }
 
+/* GENERAL BUTTON */
+.main-button {
+	width: 15rem;
+	height: 5rem;
+	border: 0.1rem solid var(--sec-text-color);
+	border-radius: .4rem;
+	background: linear-gradient(to left, #903aff, #d434fe, #fe34b9);
+	color: var(--white);
+	font-size: 1.6rem;
+	text-transform: capitalize;
+	font-family: var(--pry-font);
+	font-weight: 400;
+	letter-spacing: 0.1rem;
+	cursor: pointer;
+}
+.main-button:hover {
+	border: 0.1rem solid var(--white);
+	background: none;
+	transition: all 0.4s;
+}
+
 /* NAVBAR */
 nav {
 	background: url('./images/backgrounds/no-star-bg.png') no-repeat;
@@ -183,25 +204,6 @@ nav {
 
 .nav-center-menu ul li:not(:last-of-type) {
 	margin-right: 1rem;
-}
-
-.main-button {
-	width: 15rem;
-	height: 5rem;
-	border: 0.1rem solid var(--sec-text-color);
-	background: linear-gradient(to left, #903aff, #d434fe, #fe34b9);
-	color: var(--white);
-	font-size: 1.6rem;
-	text-transform: capitalize;
-	font-family: var(--pry-font);
-	font-weight: 400;
-	letter-spacing: 0.1rem;
-	cursor: pointer;
-}
-.main-button:hover {
-	border: 0.1rem solid var(--white);
-	background: none;
-	transition: all 0.4s;
 }
 
 .nav-center-menu_mobile {
@@ -351,20 +353,20 @@ nav {
 	font-size: 1.2rem;
 }
 
-/* INTRO & GUIDELINES SECTION */
-#intro, #guidelines {
+/* INTRO, GUIDELINES  & CRITERIA SECTION */
+#intro, #guidelines, #criteria {
 	width: 100%;
 	background: url('./images/backgrounds/no-star-bg.png') no-repeat bottom/cover;
 	padding: 5rem 0;
 	border-bottom: var(--section-border-line);
 }
 
-.intro-content, .guidelines-content {
+.intro-content, .guidelines-content, .criteria-content {
 	display: flex;
 	align-items: center;
 }
 
-.intro-texts, .guidelines-texts {
+.intro-texts, .guidelines-texts, .criteria-texts {
 	flex-basis: 50%;
 	flex-shrink: 0;
 	margin-left: 1.5rem;
@@ -378,12 +380,12 @@ nav {
 	right: 0;
 	width: 3rem;
 	height: 3rem;
-	background: url('./images/intro-section/star\ pu.png') no-repeat;
+	background: url('./images/intro-section/star-pu.png') no-repeat;
 	background-size: contain;
 	animation: illustrations-animation 5s 0.5s infinite;
 }
 
-.intro-img, .guidelines-img  {
+.intro-img, .guidelines-img, .criteria-img  {
 	flex-basis: 50%;
 	flex-shrink: 0;
 	width: 50rem;
@@ -391,7 +393,7 @@ nav {
 	animation: illustrations-animation 5s 0.5s infinite;
 }
 
-.intro-img img, .guidelines-img img {
+.intro-img img, .guidelines-img img, .criteria-img img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -429,4 +431,123 @@ nav {
 	background-size: contain;
 }
 
-/* CRITERIA SECTION */
+.criteria-text-list {
+	margin-bottom: 3rem;
+}
+
+.criteria-text-list p:not(:last-of-type) {
+	margin-bottom: 2rem;
+}
+
+.criteria-text-list p span:first-of-type {
+	color: var(--sec-text-color);
+	font-weight: 600;
+}
+
+/* TIMELINE SECTION */
+#timeline {
+	width: 100%;
+	background: url('./images/backgrounds/no-star-bg.png') no-repeat bottom/cover;
+	padding: 5rem 0;
+	border-bottom: var(--section-border-line);
+}
+
+.timeline-header {
+	margin-bottom: 2rem;
+}
+
+.timeline-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+.timeline-header-title {
+	font-family: var(--sec-font);
+	font-size: 3rem;
+	text-align: center;
+}
+
+.timeline-header-para {
+	font-size: 1.4rem;
+	width: 65%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.timeline-details {
+	width: 100%;
+	margin-top: 6rem;
+}
+
+.timeline-details article {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.timeline-details article:not(:last-of-type) {
+	margin-bottom: 4rem;
+}
+
+.timeline-details article.reverse {
+	flex-direction: row-reverse;
+}
+
+.timeline-details-info {
+	flex-basis: 40%;
+	text-align: right;
+}
+.timeline-details-info.reverse {
+	text-align: left;
+}
+
+.timeline-details-info h2 {
+	color: var(--pry-text-color);
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: .5rem;
+}
+
+.timeline-details-info p {
+	font-size: 1.4rem;
+	width: 80%;
+	margin-left: auto;
+}
+.timeline-details-info.reverse p {
+	margin-left: 0;
+}
+
+.timeline-details-date {
+	flex-basis: 40%;
+}
+
+.timeline-details-date h2 {
+	color: var(--pry-text-color);
+	font-size: 2;
+	font-weight: bold;
+}
+
+.timeline-order {
+	font-size: 2.2rem;
+	font-weight: bold;
+	width: 3.5rem;
+	height: 3.5rem;
+	background: var(--pry-text-color);
+	border-radius: 50%;
+	text-align: center;
+	position: relative;
+}
+
+.timeline-order::before {
+	position: absolute;
+	content: '';
+	bottom: 4.3rem;
+	left: 50%;
+	transform: translateX(-50%);
+	width: .4rem;
+	height: 6rem;
+	background-color: var(--pry-text-color);
+}
+

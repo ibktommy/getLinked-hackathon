@@ -71,6 +71,18 @@
 	.section-header-text {
 		font-size: 2.5rem;
 	}
+
+	/* CRITERIA SECTION */
+	.timeline-details-info h2 {
+		font-size: 1.6rem;
+	}
+	.timeline-details-date h2 {
+		font-size: 1.6rem;
+	}
+	.timeline-details-info p {
+		width: 95%;
+		font-size: 1.2rem;
+	}
 }
 
 /* 1050px SCREENS STYLES*/
@@ -196,17 +208,17 @@
 		font-size: 3.5rem;
 	}
 
-	/* INTRO & GUIDELINES SECTION */
-	.intro-content, .guidelines-content {
+	/* INTRO, GUIDELINES & CRITERIA SECTION */
+	.intro-content, .guidelines-content, .criteria-content {
 		flex-direction: column;
 	}
 
-	.intro-img, .guidelines-img {
+	.intro-img, .guidelines-img, .criteria-img {
 		flex-basis: 100%;
 		margin-right: 0;
 		margin-bottom: 5rem;
 	}
-	.intro-texts, .guidelines-texts {
+	.intro-texts, .guidelines-texts, .criteria-texts {
 		flex-basis: 100%;
 		margin-left: 0;
 		text-align: center;
@@ -220,6 +232,76 @@
 	.section-para {
 		width: 50%;
 		margin: 0 auto;
+	}
+
+	/* CRITERIA SECTION */
+	.timeline-header-para {
+		width: 80%;
+	}
+	.timeline-details {
+		width: 80vw;
+	}
+
+	.timeline-details article:not(:last-of-type) {
+		margin-bottom: 2.5rem;
+	}
+
+	.timeline-details article, .timeline-details article.reverse {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.timeline-details-info {
+		text-align: left;
+		flex-basis: 100%;
+	}
+
+	.timeline-details-info h2 {
+		font-size: 1.8rem;
+	}
+
+	.timeline-details-info.reverse {
+		text-align: left;
+	}
+
+	.timeline-details-info p {
+		width: 100%;
+		margin: 0;
+		font-size: 1.4rem;
+	}
+
+	.timeline-details-info.reverse p {
+		margin: 0;
+	}
+
+	.timeline-details-date {
+		flex-basis: 100%;
+	}
+
+	.timeline-details-date h2 {
+		font-size: 1.8rem;
+	}
+
+	.timeline-order {
+		position: absolute;
+		bottom: .5rem;
+		left: -3rem;
+		width: 2rem;
+		height: 2rem;
+		font-size: 1.4rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: .1rem solid blue;
+	}
+
+	.timeline-order::before {
+		bottom: 3rem;
+		height: 5.5rem;
+	}
+
+	.timeline-details article:nth-of-type(3) .timeline-order::before{
+		height: 4rem;
 	}
 }
 
@@ -293,7 +375,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		opacity: 0.9;
+		opacity: .9;
 		transform: scaleX(0);
 		z-index: 5;
 		transition: transform 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -413,7 +495,7 @@
 	}
 
 	/* INTRO & GUIDELINES SECTION */
-	.intro-img, .guidelines-img {
+	.intro-img, .guidelines-img, .criteria-img {
 		width: 30rem;
 	}
 
@@ -429,5 +511,15 @@
 	.guidelines-content .guidelines-texts::before {
 		top: 3rem;
 		right: 3%;
+	}
+
+	/* CRITERIA SECTION */
+	.timeline-details-info h2, 
+	.timeline-details-date h2 {
+		font-size: 1.5rem;
+	}
+
+	.timeline-details-info p {
+		font-size: 1.2rem;
 	}
 }
