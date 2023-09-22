@@ -353,20 +353,20 @@ nav {
 	font-size: 1.2rem;
 }
 
-/* INTRO, GUIDELINES, CRITERIA, FAQ SECTION */
-#intro, #guidelines, #criteria, #faq {
+/* INTRO, GUIDELINES, CRITERIA, FAQ, PRIZE SECTION */
+#intro, #guidelines, #criteria, #faq, #prize {
 	width: 100%;
 	background: url('./images/backgrounds/no-star-bg.png') no-repeat bottom/cover;
 	padding: 5rem 0;
 	border-bottom: var(--section-border-line);
 }
 
-.intro-content, .guidelines-content, .criteria-content, .faq-content {
+.intro-content, .guidelines-content, .criteria-content, .faq-content, .prize-content {
 	display: flex;
 	align-items: center;
 }
 
-.intro-texts, .guidelines-texts, .criteria-texts, .faq-texts {
+.intro-texts, .guidelines-texts, .criteria-texts, .faq-texts, .prize-texts {
 	flex-basis: 50%;
 	flex-shrink: 0;
 	margin-left: 1.5rem;
@@ -385,7 +385,7 @@ nav {
 	animation: illustrations-animation 5s 0.5s infinite;
 }
 
-.intro-img, .guidelines-img, .criteria-img, .faq-img  {
+.intro-img, .guidelines-img, .criteria-img, .faq-img, .prize-img  {
 	flex-basis: 50%;
 	flex-shrink: 0;
 	width: 50rem;
@@ -393,7 +393,7 @@ nav {
 	animation: illustrations-animation 5s 0.5s infinite;
 }
 
-.intro-img img, .guidelines-img img, .criteria-img img, .faq-img img {
+.intro-img img, .guidelines-img img, .criteria-img img, .faq-img img, .prize-img img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -647,6 +647,130 @@ nav {
 	font-size: 1.4rem;
 	margin-top: .8rem;
 }
+
+/* PRIZE SECTION */
+#prize {
+	position: relative;
+}
+
+#prize::before {
+	position: absolute;
+	content: '';
+	top: 2rem;
+	left: 3rem;
+	width: 2rem;
+	height: 4rem;
+	background: url('./images/prizes-section/star-pu.png') no-repeat;
+	background-size: contain;
+	animation: illustrations-animation 5s 0.5s infinite;
+}
+
+.prize-img {
+	position: relative;
+}
+
+.prize-img::before {
+	position: absolute;
+	content: '';
+	bottom: -5rem;
+	left: -1.5rem;
+	width: 2rem;
+	height: 4rem;
+	background: url('./images/prizes-section/star-white.png') no-repeat;
+	background-size: contain;
+}
+
+#prize .section-header-text,
+#prize .section-para {
+	text-align: center;
+	width: 100%;
+}
+
+#prize .section-para {
+	width: 35rem;
+	margin: 0 auto;
+}
+
+.prize-list {
+	display: flex;
+	align-items: center;
+	margin-top: 4rem;
+}
+
+.prize-list-item:not(:last-of-type) {
+	margin-right: 2rem;
+}
+
+.prize-list-item {
+	width: 20rem;
+	height: 30rem;
+	padding: 3rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	background: rgba(212, 52, 254, 0.12);
+	border: .1rem solid var(--pry-text-color);
+	border-radius: .8rem;
+	text-align: center;
+	position: relative;
+}
+
+.prize-list-item:nth-of-type(1)::before {
+	position: absolute;
+	content: '';
+	top: -20%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 18rem;
+	height: 18rem;
+	background: url('./images/prizes-section/silver_medal-min.png') no-repeat;
+	background-size: contain;
+}
+
+.prize-list-item:nth-of-type(2)::before {
+	position: absolute;
+	content: '';
+	top: -50%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 25rem;
+	height: 25rem;
+	background: url('./images/prizes-section/gold_medal-min.png') no-repeat;
+	background-size: contain;
+}
+
+.prize-list-item:nth-of-type(2) {
+	margin-top: 2rem;
+}
+
+.prize-list-item:nth-of-type(3)::before {
+	position: absolute;
+	content: '';
+	top: -20%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 18rem;
+	height: 18rem;
+	background: url('./images/prizes-section/bronze_medal-min.png') no-repeat;
+	background-size: contain;
+}
+
+.prize-list-item h3 {
+	font-size: 3.2rem;
+	font-weight: 700;
+}
+
+.prize-list-item p {
+	font-size: 2.2rem;
+	font-weight: 500;
+}
+
+.prize-list-item h4 {
+	color: var(--pry-text-color);
+	font-size: 2.8rem;
+	font-weight: 700;
+}
+
 
 
 
