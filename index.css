@@ -257,6 +257,7 @@ nav {
 	height: 5rem;
 	background: url('./images/Showcase-section/Title/creative.png') no-repeat;
 	background-size: contain;
+	animation: illustrations-animation 5s 0.5s infinite;
 }
 
 .showcase-hero_text-header h1:last-of-type {
@@ -270,6 +271,7 @@ nav {
 	bottom: -0.5rem;
 	width: 5rem;
 	height: 5rem;
+	animation: illustrations-animation 5s 0.5s infinite;
 }
 
 .showcase-hero_text-header h1:last-of-type::before {
@@ -345,6 +347,7 @@ nav {
 	height: 3rem;
 	background: url('./images/intro-section/star\ pu.png') no-repeat;
 	background-size: contain;
+	animation: illustrations-animation 5s 0.5s infinite;
 }
 
 .section-header-text {
@@ -369,6 +372,7 @@ nav {
 	flex-shrink: 0;
 	width: 50rem;
 	margin-right: 1.5rem;
+	animation: illustrations-animation 5s 0.5s infinite;
 }
 
 .intro-img img, .guidelines-img img {
@@ -391,6 +395,7 @@ nav {
 	/* border: .1rem solid #fff; */
 	background: url('./images/guidelines-section/star.png') no-repeat;
 	background-size: contain;
+	animation: illustrations-animation 5s 0.5s infinite;
 }
 
 .guidelines-img {
@@ -407,3 +412,18 @@ nav {
 	background: url('./images/guidelines-section/star-fade.png') no-repeat;
 	background-size: contain;
 }
+
+/* Vector Illustrations Animation */
+@keyframes illustrations-animation {
+	0% {
+		transform: scale(0.7);
+	}
+	50% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(0.7);
+	}
+}
+
+/* CRITERIA SECTION */
