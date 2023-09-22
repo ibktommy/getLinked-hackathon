@@ -41,6 +41,11 @@
 	.showcase-image {
 		height: 50rem;
 	}
+
+	/* FAQ SECTION */
+	.faq-texts .section-para {
+		width: 65%;
+	}
 }
 
 /* 1200px SCREENS STYLES*/
@@ -72,7 +77,12 @@
 		font-size: 2.5rem;
 	}
 
-	/* CRITERIA SECTION */
+	/* FAQ SECTION */
+	.faq-texts .section-para {
+		width: 75%;
+	}
+
+	/* TIMELINE SECTION */
 	.timeline-details-info h2 {
 		font-size: 1.6rem;
 	}
@@ -107,6 +117,11 @@
 
 	.showcase-image {
 		height: 40rem;
+	}
+
+	/* FAQ SECTION */
+	.faq-texts .section-para {
+		width: 85%;
 	}
 }
 
@@ -209,16 +224,16 @@
 	}
 
 	/* INTRO, GUIDELINES & CRITERIA SECTION */
-	.intro-content, .guidelines-content, .criteria-content {
+	.intro-content, .guidelines-content, .criteria-content, .faq-content {
 		flex-direction: column;
 	}
 
-	.intro-img, .guidelines-img, .criteria-img {
+	.intro-img, .guidelines-img, .criteria-img, .faq-img {
 		flex-basis: 100%;
 		margin-right: 0;
 		margin-bottom: 5rem;
 	}
-	.intro-texts, .guidelines-texts, .criteria-texts {
+	.intro-texts, .guidelines-texts, .criteria-texts, .faq-texts {
 		flex-basis: 100%;
 		margin-left: 0;
 		text-align: center;
@@ -234,7 +249,28 @@
 		margin: 0 auto;
 	}
 
-	/* CRITERIA SECTION */
+	/* FAQ SECTION */
+	.faq-texts .section-para {
+		width: 70%;
+		text-align: center;
+		margin: 2rem auto 3.5rem auto;
+	}
+
+	.faq-lists-item {
+		width: 85vw;
+		margin: 0 auto;
+	}
+
+	.faq-lists-item-question h3 {
+		text-align: left;
+	}
+
+	.faq-lists-item-answer p {
+		text-align: left;
+		font-size: 1.2rem;
+	}
+
+	/* TIMELINE SECTION */
 	.timeline-header-para {
 		width: 80%;
 	}
@@ -496,7 +532,7 @@
 	}
 
 	/* INTRO & GUIDELINES SECTION */
-	.intro-img, .guidelines-img, .criteria-img {
+	.intro-img, .guidelines-img, .criteria-img, .faq-img {
 		width: 30rem;
 	}
 
