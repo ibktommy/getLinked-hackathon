@@ -29,7 +29,7 @@ html {
 	--box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	--border-stroke-one: 1px solid rgb(255, 255, 255);
 	--border-stroke-two: linear-gradient(rgb(154, 57, 255), rgb(255, 41, 185));
-	--section-border-line: 1px solid rgba(255, 255, 255, 0.18);
+	--section-border-line: .1rem solid rgb(72, 72, 72);
 }
 
 /* LIGHT MODE COLORS */
@@ -43,7 +43,7 @@ html[data-theme='dark'] {
 	--box-shadow: 0px 4px 4px rgba(255, 255, 255, 0.25);
 	--border-stroke-one: 1px solid rgb(0, 0, 0);
 	--border-stroke-two: linear-gradient(rgb(101, 198, 0), rgb(0, 214, 70));
-	--section-border-line: 1px solid rgba(0, 0, 0, 1);
+	--section-border-line: 1px solid rgba(255, 0, 255, 255.18);
 }
 
 body {
@@ -246,7 +246,6 @@ nav {
 	font-weight: 800;
 	font-size: 7rem;
 	position: relative;
-	/* border: .1rem solid #fff; */
 }
 
 .showcase-hero_text-header h1:first-of-type::before {
@@ -256,7 +255,6 @@ nav {
 	right: 18rem;
 	width: 4rem;
 	height: 5rem;
-	/* border: .1rem solid #fff; */
 	background: url('./images/Showcase-section/Title/creative.png') no-repeat;
 	background-size: contain;
 }
@@ -318,20 +316,20 @@ nav {
 	font-size: 1.2rem;
 }
 
-/* INTRO SECTION */
-#intro {
+/* INTRO & GUIDELINES SECTION */
+#intro, #guidelines {
 	width: 100%;
 	background: url('./images/backgrounds/no-star-bg.png') no-repeat bottom/cover;
 	padding: 5rem 0;
 	border-bottom: var(--section-border-line);
 }
 
-.intro-content {
+.intro-content, .guidelines-content {
 	display: flex;
 	align-items: center;
 }
 
-.intro-texts {
+.intro-texts, .guidelines-texts {
 	flex-basis: 50%;
 	flex-shrink: 0;
 	margin-left: 1.5rem;
@@ -366,15 +364,46 @@ nav {
 	width: 80%;
 }
 
-.intro-img {
+.intro-img, .guidelines-img  {
 	flex-basis: 50%;
 	flex-shrink: 0;
 	width: 50rem;
 	margin-right: 1.5rem;
 }
 
-.intro-img img {
+.intro-img img, .guidelines-img img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+
+.guidelines-content {
+	flex-direction: row-reverse;
+}
+
+.guidelines-content .guidelines-texts::before {
+	position: absolute;
+	content: "";
+	top: -3rem;
+	right: 40%;
+	width: 3rem;
+	height: 3rem;
+	/* border: .1rem solid #fff; */
+	background: url('./images/guidelines-section/star.png') no-repeat;
+	background-size: contain;
+}
+
+.guidelines-img {
+	position: relative;
+}
+
+.guidelines-img::after {
+	position: absolute;
+	content: '';
+	bottom: 20rem;
+	left:-2rem;
+	width: 3rem;
+	height: 3rem;
+	background: url('./images/guidelines-section/star-fade.png') no-repeat;
+	background-size: contain;
 }

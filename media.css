@@ -9,7 +9,7 @@
 		height: 4rem;
 	}
 
-	/* sHOWCASE SECTION */
+	/* SHOWCASE SECTION */
 	.section-center {
 		width: 1200px;
 	}
@@ -37,6 +37,10 @@
 	.showcase-hero_countdown p {
 		font-size: 5rem;
 	}
+
+	.showcase-image {
+		height: 50rem;
+	}
 }
 
 /* 1200px SCREENS STYLES*/
@@ -55,8 +59,12 @@
 		right: 6rem;
 	}
 
-	/* INTRO SECTION */
-	.intro-img {
+	.showcase-image {
+		height: 45rem;
+	}
+
+	/* INTRO & GUIDELINES SECTION */
+	.intro-img, .guidelines-img {
 		width: 45rem;
 	}
 
@@ -69,20 +77,24 @@
 @media screen and (max-width: 1050px) {
 	/* NAV */
 	.nav-center {
-		width: 980px;
+		width: 950px;
 	}
 
-	/* SHOWCASE */
 	.section-center {
-		width: 980px;
+		width: 950px;
 	}
-
+	
+	/* SHOWCASE */
 	.showcase-hero_text-header h1 {
 		font-size: 4.5rem;
 	}
 
 	.showcase-hero_text-header h1:first-of-type::before {
 		right: 13rem;
+	}
+
+	.showcase-image {
+		height: 40rem;
 	}
 }
 
@@ -124,9 +136,13 @@
 	}
 
 	.showcase-image {
-		height: 50rem;
-		flex-basis: 100%;
-		width: 100%;
+		height: max-content;
+		flex-basis: 0;
+		flex-shrink: 1;
+	}
+
+	.showcase-image img {
+		width: 50rem;
 	}
 
 	.showcase-hero_text {
@@ -180,21 +196,27 @@
 		font-size: 3.5rem;
 	}
 
-	/* INTRO SECTION */
-	.intro-content {
+	/* INTRO & GUIDELINES SECTION */
+	.intro-content, .guidelines-content {
 		flex-direction: column;
 	}
 
-	.intro-img {
+	.intro-img, .guidelines-img {
 		flex-basis: 100%;
 		margin-right: 0;
 		margin-bottom: 5rem;
 	}
-	.intro-texts {
+	.intro-texts, .guidelines-texts {
 		flex-basis: 100%;
 		margin-left: 0;
 		text-align: center;
 	}
+
+	.guidelines-content .guidelines-texts::before {
+		top: 8rem;
+		right: 5%;
+	}
+
 	.section-para {
 		width: 50%;
 		margin: 0 auto;
@@ -356,9 +378,8 @@
 		bottom: -4rem;
 	}
 
-	.showcase-image {
-		height: 30rem;
-		width: 95%;
+	.showcase-image img{
+		width: 33rem;
 	}
 
 	.showcase-hero_text-header h1:first-of-type {
@@ -391,8 +412,8 @@
 		width: 75vw;
 	}
 
-	/* INTRO SECTION */
-	.intro-img {
+	/* INTRO & GUIDELINES SECTION */
+	.intro-img, .guidelines-img {
 		width: 30rem;
 	}
 
@@ -403,5 +424,10 @@
 	.section-para {
 		width: 80%;
 		font-size: 1.3rem;
+	}
+
+	.guidelines-content .guidelines-texts::before {
+		top: 3rem;
+		right: 3%;
 	}
 }
