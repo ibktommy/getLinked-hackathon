@@ -240,6 +240,7 @@
 	}
 	.timeline-details {
 		width: 80vw;
+		margin-top: 1.5rem;
 	}
 
 	.timeline-details article:not(:last-of-type) {
