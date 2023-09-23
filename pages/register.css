@@ -44,6 +44,10 @@
 	font-family: var(--pry-font);
 }
 
+.register-form-content {
+	margin-bottom: 1.5rem;
+}
+
 .register-form-content h2 {
 	font-family: var(--sec-font);
 	font-size: 2.8rem;
@@ -218,14 +222,30 @@
 
 	#register-form {
 		flex-basis: 100%;
-		width: 95vw;
+		width: 94vw;
 		margin-left: auto;
-		margin-right: auto ;
+		margin-right: auto;
+	}
+
+	.register-form-content {
+		text-align: center;
+	}
+
+	.register-form-content h4 {
+		font-size: 1.8rem;
+	}
+
+	.register-form-content p {
+		font-size: 1.4rem;
 	}
 
 	.register-form-content_fields-input {
 		flex-direction: column;
 		width: 100%;
+	}
+
+	.register-form-content_fields-input .input-box:first-of-type {
+		margin-bottom: 1.4rem;
 	}
 
 	.input-box {
@@ -238,6 +258,21 @@
 	}
 	.input-box:last-of-type {
 		margin-left: 0;
+	}
+
+	.input-box label {
+		font-size: 1.4rem;
+	}
+
+	.register-check-input span {
+		font-size: 1.2rem;
+		line-height: 1.4;
+		margin-left: .4rem;
+	}
+
+	.register-para {
+		text-align: center;
+		font-size: 1.3rem;
 	}
 
   .register-success-content h2 {

@@ -25,16 +25,15 @@ contactForm.addEventListener('submit', (e) => {
 function sendContact() {
 	try {
 		axios({
-			url: 'https://backend.getlinked.ai//hackathon/contact-form',
+			url: 'https://backend.getlinked.ai/hackathon/contact-form',
 			method: 'post',
 			headers: {
 				Accept: 'application/json',
 			},
 			data: {
-				email: contactEmail,
-				phone_number: contactNumber,
-				first_name: contactName,
-				message: contactMessage,
+				"email": contactEmail,
+				"first_name": contactName,
+				"message": contactMessage,
 			},
 		}).then((response) => {
 			if (response.status === 201) {
