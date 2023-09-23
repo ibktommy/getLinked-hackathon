@@ -1,0 +1,250 @@
+#register {
+	width: 100%;
+	padding: 5rem 0;
+	background: linear-gradient(rgba(21, 14, 40, 0.8), rgba(21, 14, 40, 0.8)),
+		url('../images/contact-page/contact-page-bg.png') no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	margin: 8rem auto 0rem auto;
+}
+
+.register-content {
+	width: 85%;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+.register-img,
+#register-form {
+	flex-basis: 50%;
+	flex-shrink: 0;
+}
+
+.register-img {
+	width: 50rem;
+	animation: illustrations-animation 5s 0.5s infinite;
+}
+
+.register-img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#register-form {
+	border: 0.1rem solid var(--pry-text-color);
+	border: 1rem;
+	border-radius: 1rem;
+	padding: 3rem;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	background: rgba(255, 255, 255, 0.03);
+	display: flex;
+	flex-direction: column;
+	font-family: var(--pry-font);
+}
+
+.register-form-content h2 {
+	font-family: var(--sec-font);
+	font-size: 2.8rem;
+	margin-bottom: 1.5rem;
+	color: var(--pry-text-color);
+}
+
+.register-form-content p {
+	font-size: 1.5rem;
+	position: relative;
+	width: fit-content;
+	margin-bottom: 0.8rem;
+}
+
+.register-form-content p::before {
+	position: absolute;
+	content: '';
+	bottom: 0.6rem;
+	right: -8.2rem;
+	border: 0.1rem dashed var(--pry-text-color);
+	height: 0.1rem;
+	width: 8rem;
+}
+.register-form-content p::after {
+	position: absolute;
+	content: '';
+	bottom: 0.7rem;
+	right: -6rem;
+	width: 5rem;
+	height: 3.1rem;
+	background: url('../images/register-page/walk.png') no-repeat;
+	background-size: contain;
+}
+
+.register-form-content h4 {
+	font-size: 2.2rem;
+}
+
+.register-form-content_fields {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1.5rem;
+}
+
+.register-form-content_fields-input {
+	margin-bottom: 2rem;
+	display: flex;
+	align-items: center;
+}
+
+.input-box {
+	flex-basis: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.input-box:first-of-type {
+	margin-right: 0.8rem;
+}
+.input-box:last-of-type {
+	margin-left: 0.8rem;
+}
+
+.input-box label {
+	font-size: 1.5rem;
+	margin-bottom: 0.6rem;
+	text-transform: capitalize;
+	color: var(--white);
+}
+
+.input-box input {
+	background: transparent;
+	border: 0.1rem solid var(--white);
+	padding: 0.6rem 0.5rem;
+	border-radius: 0.4rem;
+	height: 4rem;
+	color: var(--white);
+	font-size: 1.4rem;
+}
+
+.input-box input::placeholder {
+	font-size: 1.4rem;
+	color: rgba(255, 255, 255, 0.25);
+}
+
+.register-para {
+	color: var(--pry-text-color);
+	font-size: 1.4rem;
+	margin-bottom: 0.8rem;
+}
+
+.register-check-input {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1.5rem;
+}
+
+.register-check-input input#check {
+	display: inline-block;
+	margin: 0.5rem;
+	background: transparent;
+}
+.register-check-input span {
+	font-size: 1.4rem;
+}
+
+#register-form button {
+	width: 100%;
+}
+
+.register-success {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--pry-bg-color);
+  opacity: .9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-success.display {
+  display: none;
+}
+
+.register-success-content {
+  width: 80%;
+  border: .1rem solid var(--pry-text-color);
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.register-success-content img {
+  width: 30rem;
+  height: auto;
+  object-fit: cover;
+}
+
+.register-success-content h2 {
+  font-size: 2rem;
+  color: var(--white);
+  margin-bottom: .6rem;
+  text-align: center;
+}
+
+.register-success-content p {
+  font-size: 1.5rem;
+}
+
+.register-success-content button {
+  margin-top: 1.5rem;
+  width: 100%;
+  flex-basis: 1005;
+}
+
+/* RESPONSIVE */
+@media screen and (max-width: 1100px) {
+	.register-content {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.register-img {
+		flex-basis: 100%;
+		width: 45rem;
+	}
+
+	#register-form {
+		flex-basis: 100%;
+		width: 80%;
+	}
+
+	.register-form-content_fields-input {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.input-box {
+		flex-basis: 100%;
+		width: 100%;
+	}
+
+	.input-box:first-of-type {
+		margin-right: 0;
+	}
+	.input-box:last-of-type {
+		margin-left: 0;
+	}
+
+  .register-success-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .register-success-content p {
+    font-size: 1.2rem;
+  }
+}
+
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>getLinked | Register</title>
+		<!-- Font Link -->
+		<link
+			rel="shortcut icon"
+			href="./images/getlinked-logo.svg"
+			type="image/x-icon"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://api.fontshare.com/v2/css?f[]=clash-display@400,700,500,600,300&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Font-awesome-icon Link -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		/>
+		<!-- CSS Link -->
+		<link rel="stylesheet" href="../index.css" />
+		<link rel="stylesheet" href="../media.css" />
+		<link rel="stylesheet" href="./register.css" />
+	</head>
+	<body>
+		<!-- NAVBAR -->
+		<nav>
+			<div class="nav-center">
+				<a href="/" id="logo">
+					<svg>
+						<use xlink:href="../images/SVG's/sprite.svg#getlinked-logo"></use>
+					</svg>
+				</a>
+
+				<!-- Desktop-Nav-Menu -->
+				<div class="nav-center-menu">
+					<ul>
+						<li><a href="#">Timeline</a></li>
+						<li><a href="#">Overview</a></li>
+						<li><a href="#">FAQs</a></li>
+						<li><a href="./contact.html">Contact</a></li>
+					</ul>
+
+					<a href="./register.html" target="_blank">
+						<button class="main-button">register</button>
+					</a>
+				</div>
+
+				<!-- Mobile-Nav-Menu -->
+				<div class="nav-center-menu_mobile">
+					<div class="nav-center-menu-bar">
+						<div class="line line-1"></div>
+						<div class="line line-2"></div>
+						<div class="line line-3"></div>
+					</div>
+
+					<div class="mobile-navlinks">
+						<ul>
+							<li><a href="#">Timeline</a></li>
+							<li><a href="#">Overview</a></li>
+							<li><a href="#">FAQs</a></li>
+							<li><a href="./contact.html">Contact</a></li>
+						</ul>
+
+						<a href="./register.html" target="_blank">
+							<button class="main-button">register</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+    <!-- REGISTER MAIN -->
+    <main id="register">
+      <div class="section-center">
+        <div class="register-content">
+          <div class="register-img">
+            <img src="../images/register-page/register-main-img-min.png" alt="register-img">
+          </div>
+
+          <form id="register-form">
+            <div class="register-form-content">
+              <h2>Register</h2>
+              <p>Be part of this movement!</p>
+              <h4>CREATE YOUR ACCOUNT</h4>
+            </div>
+
+            <div class="register-form-content_fields">
+              <div class="register-form-content_fields-input">
+                <div class="input-box">
+                  <label for="name">team's name</label>
+                  <input type="text" id="name" placeholder="Enter the name of your group" required>
+                </div>
+                <div class="input-box">
+                  <label for="phone">phone</label>
+                  <input type="number" id="phone" placeholder="Enter your phone number" required>
+                </div>
+              </div>
+              <div class="register-form-content_fields-input">
+                <div class="input-box">
+                  <label for="email">email</label>
+                  <input type="email" id="email" placeholder="Enter your email address" required>
+                </div>
+                <div class="input-box">
+                  <label for="project-topic">project topic</label>
+                  <input type="text" id="project-topic" placeholder="What is your group project topic" required>
+                </div>
+              </div>
+              <div class="register-form-content_fields-input">
+                <div class="input-box">
+                  <label for="category">category</label>
+                  <input type="number" id="category" placeholder="Enter your category" required>
+                </div>
+                <div class="input-box">
+                  <label for="group">group size</label>
+                  <input type="number" id="group" placeholder="Enter your group size" required>
+                </div>
+              </div>
+            </div>
+
+            <p class="register-para">
+              Please review your registration details before submitting
+            </p>
+
+            <div class="register-check-input">
+              <input type="checkbox" name="check" id="check">
+              <span>I agreed with the event terms and conditions and privacy policy</span>
+            </div>
+
+            <button class="main-button">register now</button>
+          </form>
+        </div>
+
+        <div class="register-success display">
+          <div class="register-success-content">
+            <img src="../images/register-page/register-congrats-min.png" alt="congrats-img">
+            <h2>Congratulations <br> you have successfully registered!</h2>
+
+            <p>Yes, it was easy and you did it!</p>
+            <p>Check your email box for the next step </p>
+						<button class="main-button">back</button>
+          </div>
+        </div>
+      </div>
+    </main>
+		<!-- JS -->
+		<script src="../app.js"></script>
+	</body>
+</html>

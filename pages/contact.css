@@ -13,7 +13,6 @@
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
-	/* justify-content: space-between; */
 }
 
 .contact-texts {
@@ -80,6 +79,7 @@
 	flex-shrink: 0;
 	border: 0.1rem solid var(--pry-text-color);
 	border: 1rem;
+	border-radius: 1rem;
 	padding: 3rem;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	background: rgba(255, 255, 255, 0.03);
