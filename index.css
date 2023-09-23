@@ -142,6 +142,11 @@ nav {
 	z-index: 2;
 }
 
+nav {
+	--animation-duration: 800ms;
+	--animate-delay: .5s
+}
+
 .nav-center {
 	width: 1440px;
 	margin: 0 auto;
@@ -213,6 +218,8 @@ nav {
 .container {
 	width: 100%;
 	margin: 0 auto;
+	--animation-duration: 1000ms;
+	--animate-delay: 1s;
 }
 
 #showcase {
