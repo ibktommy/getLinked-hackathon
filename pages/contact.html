@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>getLinked | Contact</title>
+		<!-- Font Link -->
+		<link
+			rel="shortcut icon"
+			href="./images/getlinked-logo.svg"
+			type="image/x-icon"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Unica+One&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://api.fontshare.com/v2/css?f[]=clash-display@400,700,500,600,300&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Font-awesome-icon Link -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		/>
+		<!-- CSS Link -->
+		<link rel="stylesheet" href="../index.css" />
+		<link rel="stylesheet" href="../media.css" />
+		<link rel="stylesheet" href="./contact.css" />
+	</head>
+	<body>
+		<!-- NAVBAR -->
+		<nav>
+			<div class="nav-center">
+				<a href="/" id="logo">
+					<svg>
+						<use xlink:href="../images/SVG's/sprite.svg#getlinked-logo"></use>
+					</svg>
+				</a>
+
+				<!-- Desktop-Nav-Menu -->
+				<div class="nav-center-menu">
+					<ul>
+						<li><a href="#">Timeline</a></li>
+						<li><a href="#">Overview</a></li>
+						<li><a href="#">FAQs</a></li>
+						<li><a href="./contact.html">Contact</a></li>
+					</ul>
+
+					<a href="./register.html" target="_blank">
+						<button class="main-button">register</button>
+					</a>
+				</div>
+
+				<!-- Mobile-Nav-Menu -->
+				<div class="nav-center-menu_mobile">
+					<div class="nav-center-menu-bar">
+						<div class="line line-1"></div>
+						<div class="line line-2"></div>
+						<div class="line line-3"></div>
+					</div>
+
+					<div class="mobile-navlinks">
+						<ul>
+							<li><a href="#">Timeline</a></li>
+							<li><a href="#">Overview</a></li>
+							<li><a href="#">FAQs</a></li>
+							<li><a href="./contact.html">Contact</a></li>
+						</ul>
+
+						<a href="./register.html" target="_blank">
+							<button class="main-button">register</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!-- CONTACT MAIN -->
+		<main id="contact">
+			<div class="section-center">
+				<div class="contact-content">
+					<article class="contact-texts">
+						<h3>Get in touch</h3>
+						<p>Contact Information</p>
+						<p>27,Alara Street Yaba 100012 Lagos State</p>
+						<p>Call Us : 07067981819</p>
+						<p>we are open from Monday-Friday 08:00am - 05:00pm</p>
+
+						<div class="contact-social">
+							<h5>Share on</h5>
+							<div class="contact-social-icons">
+								<a href="">
+									<svg>
+										<use
+											xlink:href="../images/SVG's/sprite.svg#instagram-icon"
+										></use>
+									</svg>
+								</a>
+								<a href="">
+									<svg>
+										<use
+											xlink:href="../images/SVG's/sprite.svg#twitter(x)-icon"
+										></use>
+									</svg>
+								</a>
+								<a href="">
+									<svg>
+										<use
+											xlink:href="../images/SVG's/sprite.svg#facebook-icon"
+										></use>
+									</svg>
+								</a>
+								<a href="">
+									<svg>
+										<use
+											xlink:href="../images/SVG's/sprite.svg#linkedin-icon"
+										></use>
+									</svg>
+								</a>
+							</div>
+						</div>
+					</article>
+
+					<form id="contact-form">
+						<div class="contact-form-content">
+							<h2>Questions or need assistance? </h2>
+              <h2>Let us know about it!</h2>
+						</div>
+
+            <div class="contact-form-content_input">
+              <input type="text" placeholder="first name" required>
+            </div>
+            <div class="contact-form-content_input">
+              <input type="email" placeholder="email" required>
+            </div>
+            <div class="contact-form-content_input">
+              <input type="number" placeholder="phone number" required>
+            </div>
+            <div class="contact-form-content_input">
+              <textarea name="message" id="message" placeholder="message" required></textarea>
+            </div>
+
+            <button class="main-button">submit</button>
+					</form>
+				</div>
+			</div>
+		</main>
+
+		<!-- JS -->
+		<script src="../app.js"></script>
+	</body>
+</html>
