@@ -10,7 +10,7 @@ contactForm.addEventListener('submit', (e) => {
 });
 
 // Function to send contact details
-function sendContact() {
+async function sendContact() {
 	// Input Variable's value
 	const contactName = document.querySelector(
 		'.contact-form-content_input #name',
@@ -25,32 +25,26 @@ function sendContact() {
 		'.contact-form-content_input #message',
 	).value;
 
-
-	// console.log(contactName);
-	// console.log(contactNumber);
-	// console.log(contactMessage);
-	// console.log(contactEmail);
-
 	// Send data to contact-form-api
-	try {
-		axios({
-			url: 'https://backend.getlinked.ai/hackathon/contact-form',
-			method: 'post',
-			headers: {
-				Accept: 'application/json',
-			},
-			data: {
-				email: contactEmail,
-				phone_number: contactNumber,
-				first_name: contactName,
-				message: contactMessage,
-			},
-		}).then((response) => {
-			if (response.status === 201) {
-				alert('Your details has been successfully sent!');
-			}
-		});
-	} catch (error) {
-		alert('OOPS! SOMETHING WENT WRONG');
-	}
+	await axios({
+		url: 'https://backend.getlinked.ai/hackathon/contact-form',
+		method: 'post',
+		headers: {
+			Accept: 'application/json',
+		},
+		data: {
+			email: contactEmail,
+			phone_number: contactNumber,
+			first_name: contactName,
+			message: contactMessage,
+		},
+	})
+	.then((response) => {
+		console.log(response);
+		alert('YOU DETAILS HAVE BEEN SUCCESSFULLY SENT!')
+	})
+	.catch((error) => {
+		console.log(error);
+		alert('OOPS! AN ERROR OCCURRED, TRY AGAIN PLEASE')
+	})
 }

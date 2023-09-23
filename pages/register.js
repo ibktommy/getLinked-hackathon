@@ -22,24 +22,22 @@ registerForm.addEventListener('submit', (e) => {
 	registerForm.reset();
 });
 
-const registerFirstName = document.querySelector('.input-box #name');
-const registerPhone = document.querySelector('.input-box #phone');
-const registerEmail = document.querySelector('.input-box #email');
-const registerProject = document.querySelector('.input-box #project-topic');
-const registerCategory = document.querySelector('.input-box #category');
-const registerGroup = document.querySelector('.input-box #group');
-const registerCheck = document.querySelector('.register-check-input #check');
-
 // Function to submit register form
 function sendregistration() {
-	let firstName = registerFirstName.value;
-	let phoneNumber = registerPhone.value;
-	let userEmail = registerEmail.value;
-	let projectTopic = registerProject.value;
-	let categoryValue = registerCategory.value;
-	let groupValue = registerGroup.value;
-	let checkAccept = registerCheck.checked;
+	// Get Input field's value
+	const registerTeamName = document.querySelector('.input-box #name').value;
+	const registerPhone = document.querySelector('.input-box #phone').value;
+	const registerEmail = document.querySelector('.input-box #email').value;
+	const registerProject = document.querySelector(
+		'.input-box #project-topic',
+	).value;
+	const registerCategory = document.querySelector('.input-box #category').value;
+	const registerGroup = document.querySelector('.input-box #group').value;
+	const registerCheck = document.querySelector(
+		'.register-check-input #check',
+	).checked;
 
+	const registerFormBtn = document.querySelector('#register-form button')
 	try {
 		axios({
 			url: 'https://backend.getlinked.ai/hackathon/registration',
@@ -48,20 +46,24 @@ function sendregistration() {
 				Accept: 'application/json',
 			},
 			data: {
-				email: userEmail,
-				phone_number: phoneNumber,
-				team_name: firstName,
-				group_size: groupValue,
-				project_topic: projectTopic,
-				category: categoryValue,
-				privacy_poclicy_accepted: checkAccept,
+				email: registerEmail,
+				phone_number: registerPhone,
+				team_name: registerTeamName,
+				group_size: registerGroup,
+				project_topic: registerProject,
+				category: registerCategory,
+				privacy_poclicy_accepted: registerCheck,
 			},
 		}).then((response) => {
 			if (response.status === 201) {
-				registerSuccess.classList.remove('display');
+				console.log(response);
+				// registerSuccess.classList.remove('display');
+			} else {
+				console.log(response);
+				alert('OOPS! SOMETHING WENT WRONG');
 			}
 		});
 	} catch (error) {
-		alert('OOPS! SOMETHING WENT WRONG');
+		console.log(error);
 	}
 }
