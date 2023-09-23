@@ -127,6 +127,17 @@
 	.faq-texts .section-para {
 		width: 85%;
 	}
+
+	/* PARTNERS SECTION */
+	.partners-img-logos {
+		width: 100%;
+	}
+
+	.partners-img_logo-img {
+		width: 20rem;
+		height: 20rem;
+		line-height: 20rem;
+	}
 }
 
 /* 950px SCREENS STYLES*/
@@ -518,6 +529,25 @@
 	}
 }
 
+/* 750px SCREENS STYLES */
+@media screen and (max-width: 750px) {
+	.partners-img-logos {
+		column-gap: 1rem;
+		row-gap: 2rem;
+	}
+
+	.partners-img_logo-img {
+		width: 13rem;
+		height: 13rem;
+		line-height: 13rem;
+	}
+
+	.partners-img_logo-img:nth-of-type(1):after,
+.partners-img_logo-img:nth-of-type(3):after {
+	bottom: -1.2rem;
+}
+}
+
 /* 550px SCREENS STYLES */
 @media screen and (max-width: 550px) {
 	/* NAV */
@@ -654,5 +684,39 @@
 
 	.prize-list-item h4 {
 		font-size: 4vw;
+	}
+
+	/* PARTNERS SECTION */
+	#partners .section-header-text .section-para {
+		width: 32rem;
+	}
+
+	.partners-img {
+		padding: 1.5rem;
+	}
+
+	.partners-img_logo-img {
+		width: 10rem;
+		height: 10rem;
+		line-height: 10rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.partners-img_logo-img img {
+		width: 8rem;
+	}
+}
+
+@media screen and (max-width:400px) {
+	/* PARTNERS SECTION */
+	.partners-img_logo-img {
+		width: 7rem;
+		height: 7rem;
+	}
+
+	.partners-img_logo-img img {
+		width: 5rem;
 	}
 }
