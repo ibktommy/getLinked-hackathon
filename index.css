@@ -352,13 +352,14 @@ nav {
 	font-size: 1.2rem;
 }
 
-/* INTRO, GUIDELINES, CRITERIA, FAQ, PRIZE, PARTNERS SECTION */
+/* INTRO, GUIDELINES, CRITERIA, FAQ, PRIZE, PARTNERS, TERMS SECTION */
 #intro,
 #guidelines,
 #criteria,
 #faq,
 #prize,
-#partners {
+#partners,
+#terms {
 	width: 100%;
 	background: url('./images/backgrounds/no-star-bg.png') no-repeat bottom/cover;
 	padding: 5rem 0;
@@ -369,7 +370,8 @@ nav {
 .guidelines-content,
 .criteria-content,
 .faq-content,
-.prize-content {
+.prize-content,
+.terms-content {
 	display: flex;
 	align-items: center;
 }
@@ -378,7 +380,8 @@ nav {
 .guidelines-texts,
 .criteria-texts,
 .faq-texts,
-.prize-texts {
+.prize-texts,
+.terms-texts {
 	flex-basis: 50%;
 	flex-shrink: 0;
 	margin-left: 1.5rem;
@@ -401,7 +404,8 @@ nav {
 .guidelines-img,
 .criteria-img,
 .faq-img,
-.prize-img {
+.prize-img,
+.terms-img {
 	flex-basis: 50%;
 	flex-shrink: 0;
 	width: 50rem;
@@ -413,7 +417,8 @@ nav {
 .guidelines-img img,
 .criteria-img img,
 .faq-img img,
-.prize-img img {
+.prize-img img,
+.terms-img img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
@@ -810,6 +815,31 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: relative;
+}
+
+.partners-img::before,
+.partners-img::after {
+	position: absolute;
+	content: '';
+	width: 2rem;
+	animation: illustrations-animation 5s 0.5s infinite;
+
+}
+.partners-img::before {
+	top: 0;
+	left: 0;
+	height: 4rem;
+	background: url('./images/partners-section/star-pu.png') no-repeat;
+	background-size:  contain;
+
+}
+.partners-img::after {
+	bottom: -2.5rem;
+	right: 30%;
+	height: 3rem;
+	background: url('./images/partners-section/star-white.png') no-repeat;
+	background-size: contain;
 }
 
 .partners-img-logos {
@@ -852,4 +882,101 @@ nav {
 	width: 100%;
 	height: auto;
 	object-fit: contain;
+}
+
+/* TERMS SECTION */
+#terms .section-header-text {
+	text-align: center;
+}
+
+#terms .section-header-text .section-para {
+	width: 50rem;
+	margin: 1rem auto;
+}
+
+.terms-img {
+	margin-top: 2rem;
+}
+
+.terms-texts {
+	border: .1rem solid var(--pry-text-color);
+	border-radius: .5rem;
+	padding: 3rem 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.terms-texts::before {
+	position: absolute;
+	content: '';
+	bottom: 5rem;
+	left: 0;
+	width: 2rem;
+	height: 3rem;
+	background: url('./images/terms-section/star-pu.png') no-repeat;
+	background-size: contain;
+	animation: illustrations-animation 5s 0.5s infinite;
+}
+
+.terms-texts-para-one {
+	font-size: 1.4rem;
+	width: 100%;
+}
+
+.terms-texts h4 {
+	width: 100%;
+	margin: 3rem 0 .2rem 0;
+	font-size: 1.4rem;
+	font-weight: 700;
+	align-self: flex-start;
+	color: var(--pry-text-color);
+}
+
+.terms-texts-para-two {
+	width: 100%;
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+
+.terms-texts ul {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	margin-top: 1.5rem;
+}
+
+.terms-texts ul li {
+	display: flex;
+	align-items: center;
+}
+
+.terms-texts ul li span {
+	font-size: 1.4rem;
+}
+
+.terms-texts ul li:nth-of-type(1) {
+	margin-bottom: 1rem;
+}
+
+.terms-texts ul li:nth-of-type(2) {
+	margin-bottom: 2rem;
+}
+
+.terms-texts ul li .fa-check {
+	width: 1.6rem;
+	height: 1.6rem;
+	padding: .5rem;
+	border-radius: 50%;
+	background: yellowgreen;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 1rem;
+}
+
+.terms-texts ul button {
+	display: inline-block;
+	align-self: center;
 }

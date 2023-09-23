@@ -68,12 +68,13 @@
 		height: 45rem;
 	}
 
-	/* INTRO,  GUIDELINES, CRITERIA, FAQ, PRIZE SECTION */
+	/* INTRO,  GUIDELINES, CRITERIA, FAQ, PRIZE, TERMS SECTION */
 	.intro-img,
 	.guidelines-img,
 	.criteria-img,
 	.faq-img,
-	.prize-img {
+	.prize-img,
+	.terms-img {
 		width: 45rem;
 	}
 
@@ -238,12 +239,13 @@
 		font-size: 3.5rem;
 	}
 
-	/* INTRO, GUIDELINES & CRITERIA, FAQ, PRIZE SECTION */
+	/* INTRO, GUIDELINES & CRITERIA, FAQ, PRIZE, TEXTS SECTION */
 	.intro-content,
 	.guidelines-content,
 	.criteria-content,
 	.faq-content,
-	.prize-content {
+	.prize-content,
+	.terms-content {
 		flex-direction: column;
 	}
 
@@ -251,7 +253,8 @@
 	.guidelines-img,
 	.criteria-img,
 	.faq-img,
-	.prize-img {
+	.prize-img,
+	.terms-img {
 		flex-basis: 100%;
 		margin-right: 0;
 		margin-bottom: 5rem;
@@ -260,7 +263,8 @@
 	.guidelines-texts,
 	.criteria-texts,
 	.faq-texts,
-	.prize-texts {
+	.prize-texts,
+	.terms-texts {
 		flex-basis: 100%;
 		margin-left: 0;
 		text-align: center;
@@ -406,6 +410,23 @@
 	.prize-list-item h4 {
 		font-size: 2rem;
 	}
+
+	/* TERMS SECTION */
+	.terms-texts {
+		width: 50rem;
+	}
+
+	.terms-texts h4 {
+		text-align: left;
+	}
+
+	.terms-texts-para-two {
+		text-align: left;
+	}
+
+	.terms-texts ul li span {
+		font-size: 1.2rem;
+	}
 }
 
 /* 830px SCREEN STYLES */
@@ -543,9 +564,9 @@
 	}
 
 	.partners-img_logo-img:nth-of-type(1):after,
-.partners-img_logo-img:nth-of-type(3):after {
-	bottom: -1.2rem;
-}
+	.partners-img_logo-img:nth-of-type(3):after {
+		bottom: -1.2rem;
+	}
 }
 
 /* 550px SCREENS STYLES */
@@ -616,12 +637,13 @@
 		width: 75vw;
 	}
 
-	/* INTRO, GUIDELINES, CRITERIA, FAQ, PRIZE SECTION */
+	/* INTRO, GUIDELINES, CRITERIA, FAQ, PRIZE, TERMS SECTION */
 	.intro-img,
 	.guidelines-img,
 	.criteria-img,
 	.faq-img,
-	.prize-img {
+	.prize-img, 
+	.terms-img {
 		width: 30rem;
 	}
 
@@ -707,9 +729,22 @@
 	.partners-img_logo-img img {
 		width: 8rem;
 	}
+
+	/* TERMS SECTION */
+	#terms .section-header-text .section-para {
+		width: 33rem;
+	}
+	.terms-texts {
+		width: 95vw;
+		margin: 0 auto;
+	}
+
+	.terms-texts-para-one {
+		font-size: 1.2rem;
+	}
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width: 400px) {
 	/* PARTNERS SECTION */
 	.partners-img_logo-img {
 		width: 7rem;
