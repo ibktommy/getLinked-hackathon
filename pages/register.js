@@ -23,7 +23,7 @@ registerForm.addEventListener('submit', (e) => {
 });
 
 // Function to submit register form
-function sendregistration() {
+async function sendregistration() {
 	// Get Input field's value
 	const registerTeamName = document.querySelector('.input-box #name').value;
 	const registerPhone = document.querySelector('.input-box #phone').value;
@@ -37,33 +37,28 @@ function sendregistration() {
 		'.register-check-input #check',
 	).checked;
 
-	const registerFormBtn = document.querySelector('#register-form button')
-	try {
-		axios({
-			url: 'https://backend.getlinked.ai/hackathon/registration',
-			method: 'post',
-			headers: {
-				Accept: 'application/json',
-			},
-			data: {
-				email: registerEmail,
-				phone_number: registerPhone,
-				team_name: registerTeamName,
-				group_size: registerGroup,
-				project_topic: registerProject,
-				category: registerCategory,
-				privacy_poclicy_accepted: registerCheck,
-			},
-		}).then((response) => {
-			if (response.status === 201) {
-				console.log(response);
-				// registerSuccess.classList.remove('display');
-			} else {
-				console.log(response);
-				alert('OOPS! SOMETHING WENT WRONG');
-			}
-		});
-	} catch (error) {
+	await axios({
+		url: 'https://backend.getlinked.ai/hackathon/registration',
+		method: 'post',
+		headers: {
+			Accept: 'application/json',
+		},
+		data: {
+			email: registerEmail,
+			phone_number: registerPhone,
+			team_name: registerTeamName,
+			group_size: registerGroup,
+			project_topic: registerProject,
+			category: registerCategory,
+			privacy_poclicy_accepted: registerCheck,
+		},
+	})
+	.then((response) => {
+		registerSuccess.classList.remove('display')
+		console.log(response);
+	})
+	.catch((error) => {
 		console.log(error);
-	}
+		alert(`${error.message}, Try again please!`);
+	})
 }

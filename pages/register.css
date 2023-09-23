@@ -221,7 +221,7 @@
 
 	.register-img {
 		flex-basis: 100%;
-		width: 45rem;
+		width: 25rem;
 	}
 
 	#register-form {
@@ -229,6 +229,7 @@
 		width: 94vw;
 		margin-left: auto;
 		margin-right: auto;
+		position: relative;
 	}
 
 	.register-form-content {
@@ -279,12 +280,17 @@
 		font-size: 1.3rem;
 	}
 
+	.register-success {
+		height: 100%;
+	}
+
   .register-success-content h2 {
     font-size: 1.6rem;
   }
 
   .register-success-content p {
     font-size: 1.2rem;
+		text-align: center;
   }
 }
 

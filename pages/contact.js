@@ -40,11 +40,11 @@ async function sendContact() {
 		},
 	})
 	.then((response) => {
-		console.log(response);
 		alert('YOU DETAILS HAVE BEEN SUCCESSFULLY SENT!')
+		console.log(response);
 	})
 	.catch((error) => {
-		console.log(error);
-		alert('OOPS! AN ERROR OCCURRED, TRY AGAIN PLEASE')
+		console.log(error.message);
+		alert(`${error.message}, Try again please!`);
 	})
 }
