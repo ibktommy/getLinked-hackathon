@@ -6,7 +6,6 @@ contactForm.addEventListener('submit', (e) => {
 	e.preventDefault();
 
 	sendContact();
-	contactForm
 	contactForm.reset();
 });
 
@@ -32,6 +31,7 @@ function sendContact() {
 	// console.log(contactMessage);
 	// console.log(contactEmail);
 
+	// Send data to contact-form-api
 	try {
 		axios({
 			url: 'https://backend.getlinked.ai/hackathon/contact-form',
