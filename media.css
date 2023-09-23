@@ -427,6 +427,12 @@
 	.terms-texts ul li span {
 		font-size: 1.2rem;
 	}
+
+	/* FOOTER */
+	.footer-content {
+		flex-direction: column;
+		gap: 3rem;
+	}
 }
 
 /* 830px SCREEN STYLES */
@@ -741,6 +747,12 @@
 
 	.terms-texts-para-one {
 		font-size: 1.2rem;
+	}
+
+	/* FOOTER */
+	.footer-content-about p {
+		font-size: 1.2rem;
+		width: 100%;
 	}
 }
 

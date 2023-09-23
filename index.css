@@ -980,3 +980,146 @@ nav {
 	display: inline-block;
 	align-self: center;
 }
+
+/* FOOTER */
+footer {
+	width: 100%;
+	padding: 3rem 0 1rem 0;
+	background: linear-gradient(rgba(21,14,40,0.6), rgba(21,14,40,0.6)), url('./images/footer/footer-bg.png') no-repeat;
+	background-size: cover;
+}
+
+footer .section-center {
+	min-height: 0;
+}
+
+.footer-content {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+
+footer #logo {
+	display: inline-block;
+}
+
+.footer-content-about p {
+	font-size: 1.3rem;
+	margin-bottom: 3rem;
+	width: 40rem;
+}
+
+.footer-content-about-links {
+	display: flex;
+	align-items: center;
+	gap: .5rem;
+}
+
+.footer-content-about-links a {
+	color: var(--white);
+	font-size: 1.3rem;
+}
+
+.footer-content-about-links span {
+	display: inline-block;
+	width: .2rem;
+	height: 2rem;
+	background-color: var(--pry-text-color);
+}
+
+.footer-content-links {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.footer-content-links ul li {
+	margin-bottom: 1rem;
+}
+
+.footer-content-links ul li a {
+	color: var(--white);
+	font-size: 1.3rem;
+}
+
+.footer-header {
+	color: var(--pry-text-color);
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.footer-content-links_social {
+	display: flex;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.footer-content-links_social h4 {
+	color: var(--pry-text-color);
+	font-size: 1.3rem;
+}
+
+.footer-content-contact li {
+	display: flex;
+	align-items: center;
+	gap: .8rem;
+	margin-top: 2.5rem;
+}
+
+.footer-content-contact li svg {
+	width: 2rem;
+	height: 2rem;
+}
+
+.footer-content-contact li span {
+	font-size: 1.3rem;
+}
+
+/* Animation for footer social icons */
+@keyframes icon-bounce {
+	0% {
+		transform: translateY(0);
+	}
+	10% {
+		transform: translateY(0);
+	}
+	15% {
+		transform: translateY(-100%);
+	}
+	20% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.footer-content-links_social a {
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+}
+
+.footer-content-links a svg {
+	width: 100%;
+	height: 100%;
+}
+
+.footer-content-links a:nth-of-type(1) svg {
+	animation: icon-bounce 2s 0.1s infinite;
+}
+.footer-content-links a:nth-of-type(2) svg {
+	animation: icon-bounce 2s 0.2s infinite;
+}
+.footer-content-links a:nth-of-type(3) svg {
+	animation: icon-bounce 2s 0.3s infinite;
+}
+.footer-content-links a:nth-of-type(4) svg {
+	animation: icon-bounce 2s 0.4s infinite;
+}
+
+.footer-copyright {
+	text-align: center;
+	margin-top: 5rem;
+	font-size: 1.3rem;
+}
