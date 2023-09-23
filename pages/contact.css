@@ -151,6 +151,8 @@
   }
   #contact-form {
     flex-basis: 100%;
-    width: 80vw;
+    width: 95vw;
+		margin-left: auto;
+		margin-right: auto;
   }
 }

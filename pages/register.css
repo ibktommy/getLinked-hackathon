@@ -218,7 +218,9 @@
 
 	#register-form {
 		flex-basis: 100%;
-		width: 80%;
+		width: 95vw;
+		margin-left: auto;
+		margin-right: auto ;
 	}
 
 	.register-form-content_fields-input {
